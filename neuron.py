@@ -10,4 +10,4 @@ class Neuron:
         self.bias = bias
 
     def feedforward(self, inputs):
-        return sigmoid(np.dot(np.array(inputs), self.weights))
+        return sigmoid(np.dot(np.array(inputs), self.weights) + self.bias)
